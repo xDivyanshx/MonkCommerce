@@ -1,5 +1,68 @@
 [
   {
+    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "Method": "Create",
+    "RelativePath": "api/Coupons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MonkCommerce.DTOs.CreateCouponDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Coupons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "Method": "Update",
+    "RelativePath": "api/Coupons/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MonkCommerce.DTOs.UpdateCouponDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "Method": "Delete",
+    "RelativePath": "api/Coupons/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MonkCommerce.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

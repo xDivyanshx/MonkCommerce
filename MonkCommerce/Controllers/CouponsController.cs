@@ -1,0 +1,67 @@
+using Microsoft.AspNetCore.Mvc;
+using MonkCommerce.DTOs;
+using MonkCommerce.Models;
+using MonkCommerce.Services.Interfaces;
+
+namespace MonkCommerce.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CouponsController : ControllerBase
+    {
+        private readonly ICouponService _couponService;
+
+        public CouponsController(ICouponService couponService)
+        {
+            _couponService = couponService;
+        }
+
+        [HttpPost]
+        public IActionResult Create(CreateCouponDto dto)
+        {
+            var coupon = new Coupon
+            {
+                Code = dto.Code,
+                DiscountPercentage = dto.DiscountPercentage,
+                ExpiryDate = dto.ExpiryDate
+            };
+
+            var created = _couponService.Create(coupon);
+
+            return CreatedAtAction(nameof(GetAll), created);
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            return Ok(_couponService.GetAll());
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, UpdateCouponDto dto)
+        {
+            var updatedCoupon = new Coupon
+            {
+                DiscountPercentage = dto.DiscountPercentage,
+                ExpiryDate = dto.ExpiryDate,
+                IsActive = dto.IsActive
+            };
+
+            var result = _couponService.Update(id, updatedCoupon);
+            if (result == null)
+                return NotFound();
+
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var success = _couponService.Delete(id);
+            if (!success)
+                return NotFound();
+
+            return NoContent();
+        }
+    }
+}
