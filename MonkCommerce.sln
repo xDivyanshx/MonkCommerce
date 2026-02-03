@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkCommerce", "MonkCommerce\MonkCommerce.csproj", "{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05BB0924-8A17-4490-87E5-54AECE818C33}
+	EndGlobalSection
+EndGlobal

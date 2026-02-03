@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C#\\MonkCommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|c:\\c#\\monkcommerce\\monkcommerce\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|solutionrelative:monkcommerce\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|c:\\c#\\monkcommerce\\monkcommerce\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|solutionrelative:monkcommerce\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|c:\\c#\\monkcommerce\\monkcommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|solutionrelative:monkcommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|c:\\c#\\monkcommerce\\monkcommerce\\monkcommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|solutionrelative:monkcommerce\\monkcommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|c:\\c#\\monkcommerce\\monkcommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59A1EE3B-1F77-4ADC-ABFA-70550B15CD8A}|MonkCommerce\\MonkCommerce.csproj|solutionrelative:monkcommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\C#\\MonkCommerce\\MonkCommerce\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MonkCommerce\\WeatherForecast.cs",
+              "ToolTip": "C:\\C#\\MonkCommerce\\MonkCommerce\\WeatherForecast.cs",
+              "RelativeToolTip": "MonkCommerce\\WeatherForecast.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T17:55:26.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MonkCommerce.http",
+              "DocumentMoniker": "C:\\C#\\MonkCommerce\\MonkCommerce\\MonkCommerce.http",
+              "RelativeDocumentMoniker": "MonkCommerce\\MonkCommerce.http",
+              "ToolTip": "C:\\C#\\MonkCommerce\\MonkCommerce\\MonkCommerce.http",
+              "RelativeToolTip": "MonkCommerce\\MonkCommerce.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-02-03T17:54:38.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\C#\\MonkCommerce\\MonkCommerce\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "MonkCommerce\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\C#\\MonkCommerce\\MonkCommerce\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "MonkCommerce\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T17:43:04.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\C#\\MonkCommerce\\MonkCommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "MonkCommerce\\appsettings.json",
+              "ToolTip": "C:\\C#\\MonkCommerce\\MonkCommerce\\appsettings.json",
+              "RelativeToolTip": "MonkCommerce\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T17:43:00.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\C#\\MonkCommerce\\MonkCommerce\\Program.cs",
+              "RelativeDocumentMoniker": "MonkCommerce\\Program.cs",
+              "ToolTip": "C:\\C#\\MonkCommerce\\MonkCommerce\\Program.cs",
+              "RelativeToolTip": "MonkCommerce\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T17:42:37.127Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
