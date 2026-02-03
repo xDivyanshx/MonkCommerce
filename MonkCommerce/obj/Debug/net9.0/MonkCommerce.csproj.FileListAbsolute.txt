@@ -16,6 +16,7 @@ C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.AssemblyInfo.cs
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.csproj.CoreCompileInputs.cache
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.MvcApplicationPartsAssemblyInfo.cs
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.MvcApplicationPartsAssemblyInfo.cache
+C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.sourcelink.json
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -31,4 +32,3 @@ C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\refint\MonkCommerce.dll
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.pdb
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.genruntimeconfig.cache
 C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\ref\MonkCommerce.dll
-C:\C#\MonkCommerce\MonkCommerce\obj\Debug\net9.0\MonkCommerce.sourcelink.json

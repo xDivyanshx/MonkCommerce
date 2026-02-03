@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "ContainingType": "CouponsController",
     "Method": "Create",
     "RelativePath": "api/Coupons",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "ContainingType": "CouponsController",
     "Method": "GetAll",
     "RelativePath": "api/Coupons",
     "HttpMethod": "GET",
@@ -26,7 +26,23 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "ContainingType": "CouponsController",
+    "Method": "Get",
+    "RelativePath": "api/Coupons/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CouponsController",
     "Method": "Update",
     "RelativePath": "api/Coupons/{id}",
     "HttpMethod": "PUT",
@@ -47,7 +63,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MonkCommerce.Controllers.CouponsController",
+    "ContainingType": "CouponsController",
     "Method": "Delete",
     "RelativePath": "api/Coupons/{id}",
     "HttpMethod": "DELETE",

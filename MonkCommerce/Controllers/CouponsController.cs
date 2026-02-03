@@ -3,65 +3,76 @@ using MonkCommerce.DTOs;
 using MonkCommerce.Models;
 using MonkCommerce.Services.Interfaces;
 
-namespace MonkCommerce.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class CouponsController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class CouponsController : ControllerBase
+    private readonly ICouponService _couponService;
+
+    public CouponsController(ICouponService couponService)
     {
-        private readonly ICouponService _couponService;
+        _couponService = couponService;
+    }
 
-        public CouponsController(ICouponService couponService)
+    [HttpPost]
+    public IActionResult Create(CreateCouponDto dto)
+    {
+        var coupon = new Coupon
         {
-            _couponService = couponService;
-        }
+            Code = dto.Code,
+            DiscountPercentage = dto.DiscountPercentage,
+            ExpiryDate = dto.ExpiryDate
+        };
 
-        [HttpPost]
-        public IActionResult Create(CreateCouponDto dto)
+        var created = _couponService.Create(coupon);
+
+        return CreatedAtAction(
+            nameof(Get),
+            new { id = created.Id },
+            created
+        );
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult Get(int id)
+    {
+        var coupon = _couponService.Get(id);
+        if (coupon == null)
+            return NotFound();
+
+        return Ok(coupon);
+    }
+
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        return Ok(_couponService.GetAll());
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, UpdateCouponDto dto)
+    {
+        var updatedCoupon = new Coupon
         {
-            var coupon = new Coupon
-            {
-                Code = dto.Code,
-                DiscountPercentage = dto.DiscountPercentage,
-                ExpiryDate = dto.ExpiryDate
-            };
+            DiscountPercentage = dto.DiscountPercentage,
+            ExpiryDate = dto.ExpiryDate,
+            IsActive = dto.IsActive
+        };
 
-            var created = _couponService.Create(coupon);
+        var result = _couponService.Update(id, updatedCoupon);
+        if (result == null)
+            return NotFound();
 
-            return CreatedAtAction(nameof(GetAll), created);
-        }
+        return Ok(result);
+    }
 
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok(_couponService.GetAll());
-        }
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        var success = _couponService.Delete(id);
+        if (!success)
+            return NotFound();
 
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, UpdateCouponDto dto)
-        {
-            var updatedCoupon = new Coupon
-            {
-                DiscountPercentage = dto.DiscountPercentage,
-                ExpiryDate = dto.ExpiryDate,
-                IsActive = dto.IsActive
-            };
-
-            var result = _couponService.Update(id, updatedCoupon);
-            if (result == null)
-                return NotFound();
-
-            return Ok(result);
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            var success = _couponService.Delete(id);
-            if (!success)
-                return NotFound();
-
-            return NoContent();
-        }
+        return NoContent();
     }
 }

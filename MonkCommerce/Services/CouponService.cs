@@ -21,6 +21,19 @@ namespace MonkCommerce.Services
             return _coupons;
         }
 
+        public Coupon Get(int id)
+        {
+            foreach (var coupon in _coupons)
+            {
+                if (coupon.Id == id)
+                {
+                    return coupon;
+                }
+            }
+            return null;
+            
+        }
+
         public Coupon? Update(int id, Coupon updatedCoupon)
         {
             var existing = _coupons.FirstOrDefault(c => c.Id == id);
