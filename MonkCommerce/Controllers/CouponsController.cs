@@ -17,21 +17,27 @@ public class CouponsController : ControllerBase
     [HttpPost]
     public IActionResult Create(CreateCouponDto dto)
     {
-        var coupon = new Coupon
+        try
         {
-            Code = dto.Code,
-            DiscountPercentage = dto.DiscountPercentage,
-            ExpiryDate = dto.ExpiryDate
-        };
+            var coupon = new Coupon
+            {
+                Code = dto.Code,
+                Type = dto.Type,
+                DiscountPercentage = dto.DiscountPercentage,
+                ExpiryDate = dto.ExpiryDate,
+                ProductIds = dto.ProductIds
+            };
 
-        var created = _couponService.Create(coupon);
+            var created = _couponService.Create(coupon);
 
-        return CreatedAtAction(
-            nameof(Get),
-            new { id = created.Id },
-            created
-        );
+            return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
+
 
     [HttpGet("{id}")]
     public IActionResult Get(int id)

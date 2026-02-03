@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonkCommerce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c8e0ee76a53c75dc7800bffa50c139616705d63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3672a7febc2b2606fbb8ea717ec68fac151f74f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonkCommerce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonkCommerce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

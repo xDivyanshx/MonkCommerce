@@ -10,11 +10,27 @@ namespace MonkCommerce.Services
 
         public Coupon Create(Coupon coupon)
         {
+            // Business validation
+            if (coupon.Type == CouponType.ProductWise &&
+                (coupon.ProductIds == null || !coupon.ProductIds.Any()))
+            {
+                throw new InvalidOperationException(
+                    "Product-wise coupon must have at least one product."
+                );
+            }
+
+            if (coupon.Type == CouponType.CartWise)
+            {
+                coupon.ProductIds = null;
+            }
+
             coupon.Id = _idCounter++;
             coupon.IsActive = true;
             _coupons.Add(coupon);
+
             return coupon;
         }
+
 
         public IEnumerable<Coupon> GetAll()
         {
